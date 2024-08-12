@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Friends</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        
+        <div class="text-content">
+           
+            <h1 class="hero-name">What I Think About You, My Friend</h1>
+
+            <div class="image-container">
+               <img  id="friendImage" src="images/pankaj.jpeg" alt="Friend Image"> <!-- Default image here -->
+            </div> 
+        <div class="infoelm">
+               <select id="friendSelect" onchange="updateImage()">
+                <option value="">Select Pankaj's friends</option>
+            </select>
+            <button onclick="generateMessage()">Show Message</button>
+            <div id="message">
+            </div>
+        </div>
+           
+        </div>
+        <!-- <div class="image-container">
+            <img id="friendImage" alt="Friend Image">
+        </div> -->
+      
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
